@@ -11,20 +11,20 @@ class DatabaseSeeder extends Seeder
     /**
      * Seed the application's database.
      */
-    public function run(): void
-    {
-        \App\Models\User::factory(10)->create();
+    // public function run(): void
+    // {
+    //     \App\Models\User::factory(10)->create();
 
-        \App\Models\User::factory()->create([
-            'name' => 'POS Kedai',
-            'email' => 'kedai@gmail.com',
-            'password' => Hash::make('12345678'),
-            'roles' => 'admin',
-        ]);
+    //     \App\Models\User::factory()->create([
+    //         'name' => 'POS Kedai',
+    //         'email' => 'kedai@gmail.com',
+    //         'password' => Hash::make('12345678'),
+    //         'roles' => 'admin',
+    //     ]);
 
 
-        $this->call([
-            ProductSeeder::class,
-        ]);
-    }
+    //     $this->call([
+    //         ProductSeeder::class,
+    //     ]);
+    // }
 }

@@ -53,7 +53,7 @@
                                             <th>Name</th>
                                             <th>Category</th>
                                             <th>Price</th>
-                                            <th>Stock</th>
+                                            <th>stok</th>
                                             <th>Photo</th>
                                             <th>Created At</th>
                                             <th>Action</th>
@@ -67,7 +67,7 @@
                                                 </td>
                                                 <td>   {{ sprintf('Rp. %s', number_format($product->price)) }}
                                                 </td>
-                                                <td>{{ $product->stock }}
+                                                <td>{{ $product->stok }}
                                                 </td>
                                                 <td>
                                                     @if ($product->image)

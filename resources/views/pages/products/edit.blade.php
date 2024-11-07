@@ -62,13 +62,13 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label>Stock</label>
+                                <label>stok</label>
                                 <input type="number"
-                                    class="form-control @error('stock')
+                                    class="form-control @error('stok')
                                 is-invalid
                             @enderror"
-                                    name="stock" value="{{ $product->stock }}">
-                                @error('stock')
+                                    name="stok" value="{{ $product->stok }}">
+                                @error('stok')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
@@ -108,7 +108,7 @@
                              </div>
 
 
-                    
+
                     </div>
                     <div class="card-footer text-right">
                         <button class="btn btn-primary">Submit</button>

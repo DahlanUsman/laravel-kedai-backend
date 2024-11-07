@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// use App\Models\User;
+
+// $user = User::find(6); // Temukan pengguna dengan ID 6
+// $user->assignRole('admin'); // Berikan role 'admin' ke pengguna
+
 
 Route::get('/', function () {
     return view('pages.auth.login');
@@ -25,5 +30,6 @@ Route::middleware(['auth'])->group(function () {
 
     Route::resource('user', UserController::class);
     Route::resource('product', \App\Http\Controllers\ProductController::class);
-    Route::resource('order', \App\Http\Controllers\OrderController::class);
+    Route::resource('profil', \App\Http\Controllers\ProfilController::class);
 });
+

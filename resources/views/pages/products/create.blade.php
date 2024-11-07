@@ -62,13 +62,13 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Stock</label>
+                                <label>stok</label>
                                 <input type="number"
-                                    class="form-control @error('stock')
+                                    class="form-control @error('stok')
                                 is-invalid
                             @enderror"
-                                    name="stock">
-                                @error('stock')
+                                    name="stok">
+                                @error('stok')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
